@@ -383,8 +383,8 @@ h2 {
 
 .badge-tag {
     display: inline-block;
-    background: rgba(243, 156, 18, 0.2);
-    color: #f39c12;
+  background: #3b2a0b;
+  color: #ffd166;
     padding: 6px 14px;
     border-radius: 20px;
     font-size: 0.9rem;
@@ -400,7 +400,7 @@ h2 {
     font-weight: 800;
 }
 
-.highlight-text {
+.hero-community .highlight-text {
     color: #2ecc71; /* Vibrant growth green */
 }
 
@@ -418,12 +418,12 @@ h2 {
 }
 
 .btn-primary {
-    background-color: #27ae60;
+  background-color: #176b3a;
     color: #ffffff;
 }
 
 .btn-primary:hover {
-    background-color: #219653;
+  background-color: #145a31;
 }
 
 .btn-secondary {
@@ -448,7 +448,7 @@ h2 {
     display: block;
     font-size: 1.8rem;
     font-weight: 700;
-    color: #f39c12;
+  color: #ffd166;
 }
 
 .stat-label {
@@ -458,7 +458,7 @@ h2 {
 
 /* Glassmorphism Right Card */
 .card-glass {
-    background: rgba(255, 255, 255, 0.05);
+  background: #17324d;
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.1);
     padding: 40px;
