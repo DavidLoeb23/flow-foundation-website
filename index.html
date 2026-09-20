@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flow Foundation</title>
+  <meta
+    name="description"
+    content="Flow Foundation is an NGO focused on education and opportunities in sports, music, arts, fashion, and technology for South African youth."
+  >
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f5f7fb;
+      --surface: #ffffff;
+      --text: #183153;
+      --muted: #4d6480;
+      --accent: #1570ef;
+      --accent-dark: #0e4fa8;
+      --shadow: 0 18px 40px rgba(24, 49, 83, 0.12);
+      --radius: 18px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      color: var(--text);
+      background: linear-gradient(180deg, #e9f1ff 0%, var(--bg) 28%, #ffffff 100%);
+    }
+
+    main {
+      width: min(1100px, calc(100% - 2rem));
+      margin: 0 auto;
+      padding: 3rem 0 4rem;
+    }
+
+    section {
+      margin-bottom: 2rem;
+    }
+
+    .hero,
+    .mission,
+    .impact {
+      background: var(--surface);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 2rem;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 4rem 2rem;
+    }
+
+    .hero h1,
+    .mission h2,
+    .impact h2 {
+      margin-top: 0;
+    }
+
+    .hero p,
+    .mission p {
+      max-width: 720px;
+      margin-left: auto;
+      margin-right: auto;
+      color: var(--muted);
+    }
+
+    .cta {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.85rem 1.5rem;
+      border-radius: 999px;
+      background: var(--accent);
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .cta:hover,
+    .cta:focus {
+      background: var(--accent-dark);
+    }
+
+    .pillars {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1rem;
+      margin-top: 1.5rem;
+      padding: 0;
+      list-style: none;
+    }
+
+    .pillars li {
+      padding: 1.25rem;
+      border-radius: 14px;
+      background: #eef4ff;
+      font-weight: 700;
+      text-align: center;
+    }
+
+    .impact {
+      display: grid;
+      gap: 1rem;
+    }
+
+    .impact-grid {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+
+    .impact-card {
+      border: 1px solid #d8e4f8;
+      border-radius: 14px;
+      padding: 1.25rem;
+      background: #fbfdff;
+    }
+
+    .impact-card h3 {
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+    }
+
+    .impact-card p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      padding-bottom: 2rem;
+    }
+
+    @media (max-width: 640px) {
+      .hero,
+      .mission,
+      .impact {
+        padding: 1.5rem;
+      }
+
+      .hero {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <p>Empowering young people across South Africa</p>
+      <h1 id="hero-title">Flow Foundation</h1>
+      <p>
+        Flow Foundation is an NGO dedicated to improving the lives of South African youth from previously
+        disadvantaged backgrounds through education, mentorship, and access to meaningful opportunities.
+      </p>
+      <a class="cta" href="#mission">Explore our mission</a>
+    </section>
+
+    <section class="mission" id="mission" aria-labelledby="mission-title">
+      <h2 id="mission-title">Where opportunity begins</h2>
+      <p>
+        We help young people discover their potential by creating pathways into learning, creativity, and
+        personal development. Our work is centered on support that builds confidence, skills, and long-term
+        opportunity.
+      </p>
+      <ul class="pillars" aria-label="Foundation focus areas">
+        <li>Education</li>
+        <li>Sports</li>
+        <li>Music</li>
+        <li>Arts</li>
+        <li>Fashion</li>
+        <li>Technology</li>
+      </ul>
+    </section>
+
+    <section class="impact" aria-labelledby="impact-title">
+      <div>
+        <h2 id="impact-title">How we make an impact</h2>
+        <p>
+          Our programs are built to nurture talent, widen access, and create spaces where young people can
+          learn, participate, and thrive.
+        </p>
+      </div>
+      <div class="impact-grid">
+        <article class="impact-card">
+          <h3>Learning support</h3>
+          <p>Encouraging growth through education-focused initiatives and mentorship.</p>
+        </article>
+        <article class="impact-card">
+          <h3>Creative pathways</h3>
+          <p>Opening doors to music, arts, and fashion as vehicles for expression and confidence.</p>
+        </article>
+        <article class="impact-card">
+          <h3>Future-ready skills</h3>
+          <p>Connecting young people with sports and technology opportunities that build lasting momentum.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Flow Foundation &mdash; building brighter futures through access and opportunity.</p>
+  </footer>
+</body>
+</html>
